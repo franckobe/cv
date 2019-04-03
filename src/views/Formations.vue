@@ -31,11 +31,11 @@ export default {
           school: 'Ynov Aix Campus, Aix-en-Provence',
           type: {
             fr: 'Alternance',
-            ang: 'Sandwich course',
+            en: 'Sandwich course',
           },
           title: {
             fr: 'Mastère chef de projet web',
-            ang: 'Master web project manager',
+            en: 'Master web project manager',
           },
         },
         {
@@ -43,11 +43,11 @@ export default {
           school: 'IUT Aix-Marseille, Aix-en-Provence',
           type: {
             fr: 'Alternance',
-            ang: 'Sandwich course',
+            en: 'Sandwich course',
           },
           title: {
             fr: 'Licence professionnelle SIL DA2I',
-            ang: 'Professional degree SIL DA2I',
+            en: 'Professional degree SIL DA2I',
           },
         },
         {
@@ -55,11 +55,11 @@ export default {
           school: 'Ynov Aix Campus, Aix-en-Provence',
           type: {
             fr: 'Initiale',
-            ang: 'Initial',
+            en: 'Initial',
           },
           title: {
             fr: 'BTS Services Informatiques aux Organisations',
-            ang: 'BTS organizations IT services',
+            en: 'BTS organizations IT services',
           },
         },
         {
@@ -67,11 +67,11 @@ export default {
           school: 'Lycée La Forbine, Marseille',
           type: {
             fr: 'Alternance',
-            ang: 'Sandwich course',
+            en: 'Sandwich course',
           },
           title: {
             fr: 'BTS Chimiste',
-            ang: 'BTS Chemist',
+            en: 'BTS Chemist',
           },
         },
       ],

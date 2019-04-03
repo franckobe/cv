@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <Navbar :lang="language" @langChanged="changeLang()" />
+      <Navbar :lang="language" @langChanged="changeLang" />
     </header>
     <main>
       <Presentation class="section" :lang="language" />
@@ -33,8 +33,8 @@
       };
     },
     methods: {
-      changeLang() {
-        this.language = this.language === 'fr' ? 'ang' : 'fr';
+      changeLang(lang) {
+        this.language = lang === 'fr' ? 'fr' : 'en';
       },
     },
   };
