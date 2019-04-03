@@ -1,5 +1,6 @@
 <template>
     <nav class="navbar">
+        <button type="button" @click="emitLangChanged">Changer langue</button>
         <ul>
             <li>
                 <a href="#presentation">
@@ -28,8 +29,16 @@
 <script>
     export default {
         name: 'Navbar',
+        props: {
+            lang: {
+                type: String,
+                default: 'fr',
+            },
+        },
         methods: {
-
+            emitLangChanged() {
+                this.$emit('langChanged');
+            },
         },
     };
 </script>
@@ -38,6 +47,7 @@
 
     nav {
         height: 100%;
+        background: #54a8c3;
     }
 
     ul {
@@ -60,7 +70,7 @@
             padding: 10px 10px 10px 40px;
 
             &:hover, &.active {
-                background-color: rgba(255, 255, 255, 0.38);
+                background-color: rgb(156, 156, 156);
             }
         }
     }

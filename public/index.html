@@ -7,7 +7,6 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
     <title>Franck GARROS</title>
-    <link rel="stylesheet" href="lib/fullpage.min.css">
 
   </head>
   <body>
@@ -17,119 +16,5 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script type="text/javascript" src="./lib/jquery/jquery.js"></script>
-    <script type="text/javascript" src="./lib/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="./lib/fullpage.extensions.min.js"></script>
-    <!--<script type="text/javascript" src="./lib/fullpage.min.js"></script>-->
-    <script>
-
-      $(function () {
-        $('#fullpage').fullpage({
-          //Navigation
-          menu: '#menu',
-          lockAnchors: false,
-          anchors:[],
-          navigation: true,
-          navigationPosition: 'right',
-          navigationTooltips: [],
-          showActiveTooltip: false,
-          slidesNavigation: false,
-          slidesNavPosition: 'bottom',
-
-          //Scrolling
-          css3: true,
-          scrollingSpeed: 700,
-          autoScrolling: true,
-          fitToSection: true,
-          fitToSectionDelay: 1000,
-          scrollBar: false,
-          easing: 'easeInOutCubic',
-          easingcss3: 'ease',
-          loopBottom: false,
-          loopTop: false,
-          loopHorizontal: true,
-          continuousVertical: false,
-          continuousHorizontal: false,
-          scrollHorizontally: false,
-          interlockedSlides: false,
-          dragAndMove: false,
-          offsetSections: false,
-          resetSliders: false,
-          fadingEffect: false,
-          normalScrollElements: '',
-          scrollOverflow: true,
-          scrollOverflowReset: false,
-          scrollOverflowOptions: null,
-          touchSensitivity: 15,
-          normalScrollElementTouchThreshold: 5,
-          bigSectionsDestination: null,
-
-          //Accessibility
-          keyboardScrolling: true,
-          animateAnchor: true,
-          recordHistory: true,
-
-          //Design
-          controlArrows: true,
-          verticalCentered: true,
-          sectionsColor : [],
-          paddingTop: '',
-          paddingBottom: '',
-          fixedElements: '',
-          responsiveWidth: 0,
-          responsiveHeight: 0,
-          responsiveSlides: false,
-          parallax: true,
-          parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
-
-          //Custom selectors
-          sectionSelector: '.section',
-          slideSelector: '.slide',
-
-          lazyLoading: true,
-
-          //events
-          onLeave: function(origin, destination, direction){},
-          afterLoad: function(origin, destination, direction){},
-          afterRender: function(){},
-          afterResize: function(width, height){},
-          afterResponsive: function(isResponsive){},
-          afterSlideLoad: function(section, origin, destination, direction){},
-          onSlideLeave: function(section, origin, destination, direction){}
-        });
-      });
-
-      // $(function () {
-      //   let sections = ['#presentation','#experiences','#competences','#formations'];
-      //   let scrolled_id = '';
-      //   let scrollPosition = 0;
-      //
-      //   $('.navbar a').on('click', function (e) {
-      //     e.preventDefault();
-      //     const $link = $(this);
-      //     const hash = $link.attr('href');
-      //     $('html,body').stop().animate({
-      //       scrollTop: $(hash).offset().top,
-      //     }, 600);
-      //     // updateHash(hash);
-      //   });
-      //
-      //   $(window).scroll(function () {
-      //     let scrollTop = $(this).scrollTop();
-      //     for(let i in sections){
-      //       let section = $(sections[i]);
-      //       if (scrollTop >= section.offset().top) {
-      //         scrolled_id = section.attr('id');
-      //       }
-      //     }
-      //     $('.navbar a').removeClass('active');
-      //     $('.navbar a[href="#' + scrolled_id + '"]').addClass('active');
-      //     updateHash('#' + scrolled_id);
-      //   });
-      //
-      //   function updateHash(hash) {
-      //     self.document.location.hash = hash;
-      //   }
-      // });
-    </script>
   </body>
 </html>
